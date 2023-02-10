@@ -43,7 +43,7 @@ fn main() -> ! {
     wdt1.disable();
 
     let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
-    let led = io.pins.gpio4.into_push_pull_output();
+    let led = io.pins.gpio7.into_push_pull_output();
 
     let mut ledc = LEDC::new(
         peripherals.LEDC,

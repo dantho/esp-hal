@@ -33,13 +33,13 @@ fn main() -> ! {
     // Disable watchdog timers
     rtc.swd.disable();
     rtc.rwdt.disable();
-    wdt0.start(2u64.secs());
+    wdt0.start(4u64.secs());
     wdt1.disable();
 
     timer0.start(1u64.secs());
 
     loop {
-        wdt0.feed();
+        // wdt0.feed();
         println!("Hello world!");
         block!(timer0.wait()).unwrap();
     }
