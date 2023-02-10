@@ -1,6 +1,6 @@
 //! //! RGB LED Demo
 //!
-//! This example drives an SK68XX RGB LED that is connected to the GPIO8 pin.
+//! This example drives an SK68XX RGB LED that is connected to the ~GPIO8~ GPIO2 pin.
 //! A RGB LED is connected to that pin on the ESP32-C3-DevKitM-1 and
 //! ESP32-C3-DevKitC-02 boards.
 //!
