@@ -45,7 +45,7 @@ fn main() -> ! {
 
     // Set GPIO5 as an output
     let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
-    let mut led = io.pins.gpio5.into_push_pull_output();
+    let mut led = io.pins.gpio7.into_push_pull_output();
 
     // Set GPIO9 as an input
     let mut button = io.pins.gpio9.into_pull_down_input();
